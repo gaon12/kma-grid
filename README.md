@@ -22,6 +22,31 @@ console.log('Grid X:', coord.gridX);
 console.log('Grid Y:', coord.gridY);
 ```
 
+이후 `package.json`에 다음 항목을 추가합니다.
+```json
+"type": "module",
+```
+
+이런식으로 추가하면 됩니다.
+```json
+{
+  "name": "testmodule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kma-grid": "^1.0.0"
+  }
+}
+```
+
 ## API
 ### `new Coordinate(latitude, longitude)`
 - `latitude` (Number) - 위도 (degrees)
