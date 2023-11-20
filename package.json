@@ -1,7 +1,7 @@
 {
     "name": "kma-grid",
-    "version": "1.0.0",
-    "description": "A brief description of your library",
+    "version": "1.0.3",
+    "description": "Library to convert latitude longitude coordinates to KMA Grid coordinates",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
