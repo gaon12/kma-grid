@@ -1,0 +1,28 @@
+{
+    "name": "kma-grid",
+    "version": "1.0.0",
+    "description": "A brief description of your library",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "type": "module",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/gaon12/kma-grid.git"
+    },
+    "keywords": [
+      "lambert",
+      "projection",
+      "coordinate",
+      "transformation",
+      "kma"
+    ],
+    "author": "Gaon12",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/gaon12/kma-grid/issues"
+    },
+    "homepage": "https://github.com/gaon12/kma-grid"
+  }
+  
