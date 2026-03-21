@@ -24,7 +24,7 @@
     "type": "module",
     "repository": {
         "type": "git",
-        "url": "https://github.com/gaon12/kma-grid.git"
+        "url": "git+https://github.com/gaon12/kma-grid.git"
     },
     "keywords": [
         "lambert",
