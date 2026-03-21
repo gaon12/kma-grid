@@ -1,28 +1,45 @@
 {
     "name": "kma-grid",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Library to convert latitude longitude coordinates to KMA Grid coordinates",
-    "main": "index.js",
+    "main": "./index.js",
+    "types": "./index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./index.d.ts",
+            "import": "./index.js",
+            "default": "./index.js"
+        }
+    },
+    "files": [
+        "index.js",
+        "index.d.ts",
+        "README.md",
+        "LICENSE"
+    ],
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "tsc -p tsconfig.json",
+        "prepublishOnly": "npm run build"
     },
     "type": "module",
     "repository": {
-      "type": "git",
-      "url": "https://github.com/gaon12/kma-grid.git"
+        "type": "git",
+        "url": "https://github.com/gaon12/kma-grid.git"
     },
     "keywords": [
-      "lambert",
-      "projection",
-      "coordinate",
-      "transformation",
-      "kma"
+        "lambert",
+        "projection",
+        "coordinate",
+        "transformation",
+        "kma"
     ],
     "author": "Gaon12",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/gaon12/kma-grid/issues"
+        "url": "https://github.com/gaon12/kma-grid/issues"
     },
-    "homepage": "https://github.com/gaon12/kma-grid"
-  }
-  
+    "homepage": "https://github.com/gaon12/kma-grid",
+    "devDependencies": {
+        "typescript": "^5.9.2"
+    }
+}
