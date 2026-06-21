@@ -1,6 +1,6 @@
 {
     "name": "kma-grid",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Library to convert latitude longitude coordinates to KMA Grid coordinates",
     "main": "./index.js",
     "types": "./index.d.ts",
