@@ -1,6 +1,6 @@
 {
     "name": "kma-grid",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Library to convert latitude longitude coordinates to KMA Grid coordinates",
     "main": "./index.js",
     "types": "./index.d.ts",
@@ -19,9 +19,18 @@
     ],
     "scripts": {
         "build": "tsc -p tsconfig.json",
-        "prepublishOnly": "npm run build"
+        "test": "node --test",
+        "pack:check": "npm pack --dry-run",
+        "prepublishOnly": "npm test && npm run build"
     },
     "type": "module",
+    "sideEffects": false,
+    "engines": {
+        "node": ">=18.17"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gaon12/kma-grid.git"
@@ -31,7 +40,9 @@
         "projection",
         "coordinate",
         "transformation",
-        "kma"
+        "kma",
+        "weather",
+        "forecast"
     ],
     "author": "Gaon12",
     "license": "MIT",
